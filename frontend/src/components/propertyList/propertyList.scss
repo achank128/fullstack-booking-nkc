@@ -1,0 +1,25 @@
+.pList{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  .pListItem{
+    flex:1;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .pListImg{
+    width: 220px;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .pListTitle{
+    color: #222;
+    font-size: 16px;
+    padding: 8px 0;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+}

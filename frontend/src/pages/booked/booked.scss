@@ -1,0 +1,19 @@
+.bookedContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bookedWrapper {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  gap: 20px;
+
+  .bookedTitle{
+    margin-bottom: 20px;
+  }
+
+}
+
+
