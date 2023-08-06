@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./mailList.scss";
 
 const MailList = () => {
@@ -9,7 +10,9 @@ const MailList = () => {
       </span>
       <div className="mailInputContainer">
         <input type="text" placeholder="Địa chỉ Email của bạn" />
-        <button>Đăng ký</button>
+        <Link to="/register">
+          <button>Đăng ký</button>
+        </Link>
       </div>
     </div>
   );

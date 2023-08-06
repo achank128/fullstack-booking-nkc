@@ -1,0 +1,23 @@
+.locationList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.locationList .locationListItem {
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+.locationList .locationListImg {
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.locationList .locationTitle {
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+  padding: 10px 0;
+}/*# sourceMappingURL=locationList.css.map */

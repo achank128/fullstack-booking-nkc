@@ -14,6 +14,11 @@ const sqlConfig = {
 const pool = new sql.ConnectionPool(sqlConfig);
 pool.connect();
 
+try {
+} catch (error) {
+  console.log(error);
+}
+
 export default pool;
 
 // const connectDb = async () => {

@@ -57,6 +57,16 @@ const Book = () => {
             <div className="bookTitle">
               <h2>Tiến hành đặt phòng</h2>
             </div>
+            <div className="userInfo">
+              <p>
+                Họ tên người đặt:{" "}
+                <b>{JSON.parse(localStorage.getItem("user")).HoTen}</b>
+              </p>
+              <p>
+                Số điện thoại người đặt:{" "}
+                <b>{JSON.parse(localStorage.getItem("user")).SDT}</b>
+              </p>
+            </div>
             <HotelBook roomHotel={roomHotel} dates={dates} />
             <button className="bookButton" onClick={bookRoom}>
               Xác nhận đặt phòng <FontAwesomeIcon icon={faChevronRight} />

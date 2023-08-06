@@ -14,24 +14,27 @@
   .mailDesc{
     color: #dbdbdb;
   }
-  .mailInputContainer>input{
-    width: 400px;
-    height: 30px;
-    padding: 10px;
-    font-size: 18px;
-    border: none;
-    margin-right: 5px;
-    border-radius: 5px;
-  }
-  
-  .mailInputContainer>button{
-    height: 50px;
-    background-color: #0071c2;
-    color: white;
-    border: none;
-    font-size: 18px;
-    border-radius: 5px;
-    padding: 0 40px;
-    cursor: pointer;
+  .mailInputContainer{
+
+    input{
+      width: 400px;
+      height: 30px;
+      padding: 10px;
+      font-size: 18px;
+      border: none;
+      margin-right: 5px;
+      border-radius: 5px;
+    }
+    
+    button{
+      height: 50px;
+      background-color: #0071c2;
+      color: white;
+      border: none;
+      font-size: 18px;
+      border-radius: 5px;
+      padding: 0 40px;
+      cursor: pointer;
+    }
   }
 }

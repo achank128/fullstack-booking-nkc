@@ -3,7 +3,7 @@ import sql from "mssql";
 
 export const register = async (req, res) => {
   const request = new sql.Request(pool);
-  const { username, password, email, name } = req.body;
+  const { username, password, email, name, phone } = req.body;
 
   let q =
     "SELECT * FROM T_TaiKhoan WHERE TenDangNhap = @username OR Email = @email";
@@ -20,9 +20,10 @@ export const register = async (req, res) => {
     }
 
     let q2 =
-      "INSERT INTO T_TaiKhoan(TenDangNhap, MatKhau, Email, HoTen) VALUES (@username, @password, @email, @name)";
+      "INSERT INTO T_TaiKhoan(TenDangNhap, MatKhau, Email, HoTen, SDT) VALUES (@username, @password, @email, @name, @phone)";
     request.input("password", password);
     request.input("name", name);
+    request.input("phone", phone);
 
     request.query(q2, (err, result) => {
       if (err) {

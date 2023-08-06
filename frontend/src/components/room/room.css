@@ -1,0 +1,32 @@
+.roomItem .roomInfo {
+  max-width: 400px;
+}
+.roomItem .roomInfo h3 {
+  color: #0062a7;
+}
+.roomItem .roomInfo .desc {
+  padding: 8px 0;
+  font-size: 14px;
+}
+.roomItem .selectQuantity {
+  width: 100px;
+}
+.roomItem .roomError {
+  color: red;
+}
+.roomItem .bookRoomBtn {
+  background-color: #0071c2;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.roomItem .bookRoomBtn:hover {
+  background-color: #0062a7;
+}
+.roomItem .price-desc {
+  font-size: 0.75rem;
+  color: #333;
+}/*# sourceMappingURL=room.css.map */

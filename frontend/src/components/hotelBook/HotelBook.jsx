@@ -61,7 +61,7 @@ const HotelBook = ({ roomHotel, dates }) => {
           <div className="total">
             <p>Số đêm: {roomHotel.SoDem}</p>
             <p className="price">
-              Tổng: {formater.format(roomHotel.GiaPhong * roomHotel.SoDem)} VND
+              Tổng: {formater.format(roomHotel.TongTien)} VND
             </p>
           </div>
         </div>

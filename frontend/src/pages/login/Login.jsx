@@ -7,6 +7,7 @@ import "./login.scss";
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -19,6 +20,7 @@ const Login = () => {
       localStorage.setItem("user", JSON.stringify(res.data.data));
       navigate("/");
     } catch (error) {
+      setError("Username or Password không chính xác");
       console.log(error);
     }
   };
@@ -48,6 +50,8 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
+            <p className="error">{error}</p>
+
             <button className="button" onClick={handleLogin}>
               Login
             </button>

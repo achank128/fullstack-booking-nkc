@@ -45,6 +45,7 @@ const Room = ({ room }) => {
       </td>
       <td>
         <h4>VND {formater.format(room.GiaPhong)}</h4>
+        <p className="price-desc">Đã bao gồm thuế và phí</p>
       </td>
       <td>
         {roomTitle.length > 0 ? (

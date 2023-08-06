@@ -1,0 +1,35 @@
+.bookContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bookWrapper {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  gap: 20px;
+}
+.bookWrapper .bookResult {
+  width: 100%;
+}
+.bookWrapper .bookTitle {
+  margin-bottom: 20px;
+}
+.bookWrapper .bookButton {
+  float: right;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  padding: 16px 32px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.bookWrapper .bookButton:hover {
+  background-color: #0062a7;
+}
+.bookWrapper .userInfo {
+  font-size: 18px;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=book.css.map */

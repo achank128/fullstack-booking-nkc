@@ -1,8 +1,8 @@
-import express from "express";
-import { getProperty } from "../controller/propertyController.js";
+import express from 'express';
+import { getProperty } from '../controllers/propertyController.js';
 
 const router = express.Router();
 
-router.get("/", getProperty);
+router.get('/', getProperty);
 
 export default router;

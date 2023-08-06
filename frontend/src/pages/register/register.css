@@ -1,0 +1,33 @@
+.register {
+  margin: auto;
+  width: 360px;
+  padding: 30px 0;
+}
+.register .form {
+  display: flex;
+  margin: 20px 0;
+  flex-direction: column;
+}
+.register label {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.register .input {
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.register .button {
+  border: none;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.register p {
+  font-size: 12px;
+  text-align: center;
+}/*# sourceMappingURL=register.css.map */

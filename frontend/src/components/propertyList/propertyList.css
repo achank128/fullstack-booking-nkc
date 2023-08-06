@@ -1,0 +1,24 @@
+.pList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.pList .pListItem {
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+}
+.pList .pListImg {
+  width: 220px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pList .pListTitle {
+  color: #222;
+  font-size: 16px;
+  padding: 8px 0;
+  font-weight: 700;
+  text-transform: capitalize;
+}/*# sourceMappingURL=propertyList.css.map */

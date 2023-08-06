@@ -1,0 +1,61 @@
+.hotelBook {
+  border: 1px solid lightgray;
+  padding: 16px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.hotelBook .img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+}
+.hotelBook .star {
+  color: #febb02;
+  font-size: 12px;
+}
+.hotelBook .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 2;
+}
+.hotelBook .desc .title {
+  color: #0071c2;
+}
+.hotelBook .desc .bed {
+  color: #666;
+}
+.hotelBook .desc .address {
+  font-size: 12px;
+}
+.hotelBook .desc .subtitle {
+  font-size: 12px;
+  font-weight: 600;
+}
+.hotelBook .desc .features {
+  font-size: 12px;
+}
+.hotelBook .details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hotelBook .details .dates {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: right;
+  color: #333;
+}
+.hotelBook .details .total {
+  text-align: right;
+}
+.hotelBook .details .total .price {
+  font-size: 20px;
+  font-weight: 600;
+}/*# sourceMappingURL=hotelBook.css.map */

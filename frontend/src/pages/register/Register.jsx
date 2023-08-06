@@ -9,17 +9,18 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
   const navigate = useNavigate();
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    console.log({ username, email, name, password });
     try {
       const res = await publicRequest.post("/auth/register", {
         username,
         password,
         email,
         name,
+        phone,
       });
       localStorage.setItem("user", JSON.stringify(res.data.data));
       navigate("/");
@@ -44,15 +45,7 @@ const Register = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <label htmlFor="username">Tên đăng nhập:</label>
-            <input
-              type="text"
-              placeholder="Username"
-              id="username"
-              className="input"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
+
             <label htmlFor="name">Tên đầy đủ:</label>
             <input
               type="text"
@@ -62,6 +55,27 @@ const Register = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
+
+            <label htmlFor="phone">Số điện thoại:</label>
+            <input
+              type="text"
+              placeholder="Phone number"
+              id="phone"
+              className="input"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+            />
+
+            <label htmlFor="username">Tên đăng nhập:</label>
+            <input
+              type="text"
+              placeholder="Username"
+              id="username"
+              className="input"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+
             <label htmlFor="pasword">Mật khẩu:</label>
             <input
               type="password"

@@ -96,7 +96,7 @@ const Hotel = () => {
           </div>
           <div className="hotelDetails">
             <div className="hotelDesc">
-              <p>{hotel.Mota}</p>
+              <p>{hotel.MoTa}</p>
               <div className="hotelService">
                 <h3>Các tiện nghi được ưa chuộng nhất</h3>
                 <div className="hotelServiceList">

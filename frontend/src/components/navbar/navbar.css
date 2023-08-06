@@ -1,0 +1,35 @@
+.navbar {
+  height: 50px;
+  padding: 10px 32px;
+  background-color: #003580;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer {
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navContainer .logo {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Trebuchet MS";
+}
+.navContainer .navButton {
+  margin-left: 10px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  border: 1px solid #055dda;
+  color: #0654c0;
+  border-radius: 2px;
+}
+.navContainer .icon {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #fff;
+}/*# sourceMappingURL=navbar.css.map */
